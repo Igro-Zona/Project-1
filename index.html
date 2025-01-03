@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="My CV, profile, about me, Timur, Bikmuhametov, резюме, работа, опыт, experience, Тимур, Бикмухаметов"
+    />
+    <meta
+      name="description"
+      content="Этот сайт - резюме Тимура Бикмухаметова"
+    />
     <title>My CV</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="all">
-      <div class="info">
-        <div class="card">
-          <img src="лого канала.png" class="myFoto" />
-          <h1>Тимур Бикмухаметов</h1>
+    <div class="container">
+      <div class="img">
+        <img src="лого канала.png" alt="Здесь моя аватарка" width="300" />
+      </div>
+      <header class="header" id="header">
+        <h1>Тимур Бикмухаметов</h1>
+        <article class="article" id="article">
           <p>
-            Мне 17 лет, живу в <strong>Эквадоре</strong>. Создатель Ютуб канала
-            <em>Игро-Zona</em>.<br />
-            Начинаю свой путь во Frontend Разработке.
+            17 лет, собираюсь стать <strong>Frontend</strong> - разработчиком.
+            Автор <strong>YouTube</strong> канала -
+            <strong>Игро-Zona</strong>
           </p>
-          <h4>Мои социальные сети</h4>
 
-          <a href="https://www.youtube.com/@igro-zona22244">Youtube</a>
-          |
-          <a href=" https://t.me/+ccB1rt4Y7Q1kMDUy">Telegram</a>
-        </div>
+          <p>
+            Люблю играть в <strong>Видеоигры</strong>, занимаюсь
+            <strong>Шахматами</strong> и конечно-же люблю
+            <strong>Программировать</strong>.
+          </p>
+        </article>
+      </header>
+
+      <div class="social" id="social">
+        <h2>Мои социальные сети:</h2>
+        <a
+          href="https://www.youtube.com/@igro-zona22244"
+          class="btn"
+          id="youtube"
+          >Youtube</a
+        >
+        <a href=" https://t.me/+ccB1rt4Y7Q1kMDUy" class="btn" id="telegram"
+          >Telegram</a
+        >
       </div>
 
-      <div class="card">
-        <h2>Мои хобби</h2>
-        <ol class="list">
-          <li>Занимаюсь шахматами (1 разряд)</li>
-          <li>Люблю видеоигры</li>
-          <li>Занимаюсь видеоблогингом</li>
-        </ol>
+      <hr />
+
+      <div class="hobbies" id="hobbies">
+        <h2>Мои Хобби:</h2>
+        <ul>
+          <li>Видеоигры</li>
+          <li>Видеоблогинг</li>
+          <li>Шахматы</li>
+          <li>Программирование</li>
+        </ul>
       </div>
 
-      <div class="card">
-        <h2>Связаться со мной</h2>
-        <form action="/">
-          <label for="name">Ваше имя</label>
-          <input type="text" id="name" placeholder="Писать сюда" />
-          <br />
-          <label for="email">Ваш Email</label>
-          <input type="email" id="email" placeholder="Писать сюда" />
-          <br />
-          <label for="comment">Ваше сообщение</label>
-          <br />
-          <textarea
-            name="text"
-            id="comment"
-            placeholder="Писать сюда"
-          ></textarea>
-          <br />
-          <input type="submit" value="Отправка" />
-        </form>
-      </div>
+      <hr />
 
-      <div class="card">
-        <h2>Моё обучение</h2>
+      <div class="table" id="table">
+        <h2>Классы образования:</h2>
         <table class="table">
           <thead>
             <tr>
@@ -93,12 +102,33 @@
         </table>
       </div>
 
-      <div class="card">
-        <h3>Youtube видео</h3>
-        <a href="youtube.html">Посмотреть список</a>
-      </div>
-    </div>
+      <hr />
 
-    <div style="margin-bottom: 500px"></div>
+      <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="text">Ваше имя:</label>
+            <input type="text" id="text" placeholder="Введите имя..." />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" placeholder="Введите email..." />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label><br />
+          <textarea
+            id="message"
+            cols="25"
+            rows="6"
+            placeholder="Введите сообщение..."
+          ></textarea>
+          <input type="submit" value="Отправить" id="send-input" />
+        </div>
+      </form>
+      <hr />
+    </div>
   </body>
 </html>

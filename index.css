@@ -1,78 +1,213 @@
 body {
-  background-color: rgb(218, 233, 202);
-  font-size: 24px;
-  color: rgb(89, 1, 100);
-  font-style: normal;
-  font-weight: 400;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.6em;
+  font: normal 20px 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
-.myFoto {
-  background-color: rgb(0, 0, 0);
-  width: 300px;
-  border-radius: 24px;
-  box-shadow: 8px 5px 18px rgba(81, 32, 94);
-}
-
-.info p {
-  font-weight: 700;
-  font-style: italic;
-}
-.all {
-  max-width: 90%;
+.container {
+  background-color: bisque;
   margin: auto;
+  max-width: 900px;
+  width: 80%;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 4px 4px 14px rgb(0, 0, 0);
 }
-.box_model > div {
-  float: left;
+
+.header {
+  margin-left: 4px;
+  width: 60%;
+  float: right;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-size: 40px;
+  word-spacing: 10px;
+  text-decoration: underline rgb(0, 0, 0);
+  letter-spacing: 1px;
+}
+.img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  float: inline-start;
   background-color: black;
-  height: 200px;
-  width: 25%;
-  border: 4px solid red;
-  box-sizing: border-box;
+  border-radius: 24px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 4px 4px 14px rgb(143, 143, 13);
 }
 
-a {
-  color: black;
-  text-decoration: none;
+.article {
+  background-color: rgb(241, 180, 206);
+  border-radius: 24px;
+  padding: 20px;
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  color: blue;
-}
-
-a:visited {
-  color: grey;
-}
-
-.card {
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  background-color: rgb(233, 224, 175);
-}
-
-.list {
-  padding: 0px 30px;
-}
-
-.list li {
-  color: rgb(108, 101, 170);
+p {
+  background-color: rgb(241, 139, 147);
+  margin-top: 0px;
   margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+.social {
+  background-color: rgb(233, 255, 221);
+  border-bottom: 2px;
+  padding-bottom: 18px;
+  margin-left: 50px;
+  border-radius: 24px;
+  width: 800px;
+  height: max-content;
+  display: inline-block;
+  text-align: center;
+}
+
+.hobbies {
+  background-color: rgb(185, 255, 255);
+  border-radius: 24px;
+  padding-left: 15px;
+  padding-bottom: 1px;
+  padding-top: 1px;
 }
 
 .table {
+  background-color: rgb(197, 255, 205);
+  border-radius: 24px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 1px;
+  padding-right: 15px;
+}
+
+.form {
+  background-color: rgb(246, 210, 255);
+  border-radius: 24px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  padding-top: 1px;
+  padding-right: 15px;
+}
+
+.btn {
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 24px;
+  color: white;
+  text-decoration: none;
+  margin: auto;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.btn:active {
+  color: black;
+  text-decoration: underline;
+}
+
+#youtube {
+  background-color: red;
+}
+
+#telegram {
+  background-color: rgb(3, 161, 209);
+}
+
+table,
+td,
+tr {
+  border-collapse: collapse;
+  border: 2px solid black;
+  font-family: inherit;
+}
+
+table {
+  margin-bottom: 10px;
+}
+
+td,
+tr {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+thead {
+  color: rgb(82, 29, 29);
+}
+
+.hobbies li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  margin-right: 30px;
+}
+
+td:hover {
+  background-color: rgb(198, 255, 234);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-row .form-group {
+  display: inline-block;
+  width: 50%;
+}
+
+.form-row .form-group:first-child {
+  margin-right: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
   width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid coral;
+  background-color: transparent;
+  color: black;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: 16px;
 }
 
-.table td {
-  padding-bottom: 8px;
+textarea {
+  padding: 1px 0 6px 0;
 }
 
-.table td:nth-child(2),
-.table td:nth-child(3) {
-  color: rgb(229, 132, 148);
+#send-input {
+  font-family: inherit;
+}
+
+#send-input:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#send-input:active {
+  color: red;
+  text-decoration: underline 1px solid red;
 }
